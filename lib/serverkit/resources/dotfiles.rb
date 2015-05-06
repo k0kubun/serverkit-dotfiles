@@ -8,7 +8,8 @@ module Serverkit
 
       def apply
         dotfiles.each do |file|
-          run_command("ln -fs #{::File.join(directory, file)} #{::File.join(ENV["HOME"], file)}")
+          run_command("rm -rf #{::File.join(ENV["HOME"], file)}")
+          run_command("ln -s #{::File.join(directory, file)} #{::File.join(ENV["HOME"], file)}")
         end
       end
 
