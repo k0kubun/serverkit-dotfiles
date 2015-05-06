@@ -12,7 +12,7 @@ gem "serverkit-dotfiles"
 
 ### dotfiles
 
-Make sure all files in a specified directory is symlinked to home.
+Make sure all files in a specified directory are symlinked to home.
 
 #### Attributes
 
